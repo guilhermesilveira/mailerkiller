@@ -1,4 +1,6 @@
 Mailerkiller::Application.routes.draw do
+  root :to => "list#index"
+  post "/process" => "list#process_i_hate_inheritance"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
